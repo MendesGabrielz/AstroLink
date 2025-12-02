@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IM+Fell+English+SC&family=WDXL+Lubrifont+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IM+Fell+English+SC&family=Raleway:ital,wght@0,100..900;1,100..900&family=WDXL+Lubrifont+TC&display=swap');
+
+body {
+    margin: 0px;
+    background-color: black;
+    color: #f2f2f2;
+}
+
+.primeira-secao {
+
+    background-image: url(../img/foguetelancando.png) !important;
+}
+
+
+.titulo-loja {
+    font-family: "Exo 2", sans-serif;
+    font-size: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.texto-vendas {
+    Font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#texto-leve {
+
+    width: 900px;
+
+}
+
+.container-loja {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-tendencias {
+    font-family: "Exo 2", sans-serif;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-roupas {
+    font-family: "Exo 2", sans-serif;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.item {
+    background-color: #1a1a1a;
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4%;
+    background: rgb(46, 46, 46);
+}
+
+.produto-img {
+    width: 275px;
+    height: 275px;
+    border-radius: 12px;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.produto-img-acessorio {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    flex-grow: 1;
+}
+
+#caneta {
+
+    transform: rotate(-90deg);
+}
+
+.produto-img-colecionaveis {
+
+
+    width: 300px;
+    height: 250px;
+    border-radius: 12px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.info-produto {
+    margin-top: 10px;
+}
+
+.info-produto h2 {
+    font-size: 18px;
+    margin: 5px 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.info-produto p {
+    font-size: 16px;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.linha-horizontal {
+    margin-top: 100px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+.container-foguete-mudadao {
+
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.conteudo-foguete {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+
+    button {
+
+        font-size: 20px;
+        font-family: "Raleway", sans-serif;
+    }
+
+    h3 {
+
+        font-size: 24px;
+        font-family: "Exo 2", sans-serif;
+
+    }
+}
+
+#fogueteImagem {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 20px;
+    filter: brightness(1);
+}
+
+.botoes {
+
+    width: 600px;
+}
+
+.botoes h3 {
+    color: white;
+    margin-top: 15px;
+}
+
+.botoes button {
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+    padding: 8px 14px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.botoes button:hover {
+    background: #444;
+}
+
+.nome-produto,
+.preco-produto {
+
+    font-family: "Raleway", sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .primeira-secao {
+
+        height: 100dvh;
+    }
+
+    .titulo-loja {
+
+        font-size: 40px;
+    }
+
+    #texto-leve {
+
+        width: 90%;
+    }
+
+    .texto-vendas {
+
+        p {
+
+            font-size: 24px;
+        }
+    }
+
+    .grid-4 {
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .botoes {
+        width:300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        button{
+
+            width: 200px;
+        }
+    }
+
+    .linha-horizontal {
+
+        margin-top: 50px;
+    }
+
+}

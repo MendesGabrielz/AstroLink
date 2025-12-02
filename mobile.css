@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IM+Fell+English+SC&family=WDXL+Lubrifont+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IM+Fell+English+SC&family=Raleway:ital,wght@0,100..900;1,100..900&family=WDXL+Lubrifont+TC&display=swap');
+
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-color: black;
+    color: #f2f2f2;
+    margin: 0px;
+}
+
+.primeira-secao {
+    width: 100%;
+    height: 100dvh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0.2) 30%,
+            rgba(0, 0, 0, 0) 60%),
+        url(./img/foguetelançando.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-primeira-secao {
+
+    width: 150px;
+}
+
+.conteudo-geral-primeira {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    bottom: 0px;
+
+    h1 {
+
+        display: none;
+    }
+}
+
+.conteudo-direita-primeira-secao {
+
+    margin-right: 40px;
+
+}
+
+.menu-header {
+
+    align-items: center;
+}
+
+.menu-header-lateral {
+
+    margin-top: 40px;
+
+    img {
+
+        width: 40px;
+    }
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    margin: 0px;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 0px;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+}
+
+
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+ul {
+
+    padding-inline-start: 0px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    z-index: 1000;
+
+}
+
+.sidebar.active {
+    transform: translateX(0);
+    padding-top: 40px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+
+}
+
+.sidebar li {
+    width: 100%;
+
+    h1 {
+
+        font-size: 2.5rem;
+        font-family: "Exo 2", sans-serif;
+    }
+
+    p,
+    a {
+
+        Font-family: "Raleway", sans-serif;
+        font-size: 1.25rem;
+    }
+
+    h2 {
+
+        Font-family: "Raleway", sans-serif;
+        font-size: 0.94rem;
+    }
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.icon-open,
+.icon-close {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    img {
+
+        width: 40px;
+    }
+}
+
+.menu-button {
+
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+.container-titulos {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.container-textos-secao-dois {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+
+    h1,
+    h2,
+    h3 {
+
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+    }
+}
+
+#Titulo-Explorando {
+
+    width: auto;
+    font-size: 30px;
+
+}
+
+
+#Sub-Titulo-AstroLink {
+
+
+    width: 300px;
+    font-size: 20px;
+}
+
+
+.container-blocos-secao-um {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+
+    h1,
+    h2,
+    h3 {
+
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+    }
+}
+
+.titulos-bloco {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+    a {
+
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+        color: inherit;
+        text-decoration: none;
+        font-size: 8px;
+
+    }
+}
+
+.textinhos-bloco {
+
+    width: 140px;
+    border: 1px solid rgba(182, 182, 182, 0.3);
+    background-color: rgba(104, 104, 104, 0.15);
+    border-radius: 10px;
+    padding: 5px;
+
+    transition: 0.5s ease;
+}
+
+.textinhos-bloco:hover {
+
+    background-color: white;
+    color: rgba(0, 0, 0, 0.877);
+    transform: scale(1.1);
+
+}
+
+.container-blocos-secao-dois {
+
+
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 20px;
+
+
+    h1,
+    h2,
+    h3 {
+
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    p {
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.25rem;
+        font-size: 14px;
+    }
+}
+
+.titulos-bloco-dois {
+
+
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 25px;
+
+
+}
+
+.nossa-visao,
+.nossa-missao {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(182, 182, 182, 0.5);
+    background-color: rgba(104, 104, 104, 0.3);
+    border-radius: 20px;
+    width: 90%;
+    padding: 10px;
+}
+
+.secao-dois {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.secao-dois-destaques {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0px;
+
+    h1 {
+
+        font-size: 28px;
+        font-family: "Exo 2", sans-serif;
+    }
+}
+
+.elementos-pai {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.elementos {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 0px;
+
+    p {
+
+        Font-family: "Raleway", sans-serif;
+        font-size: 1.25rem;
+    }
+}
+
+.elementos-filho {
+
+
+    display: flex;
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+}
+
+.retangulo {
+
+
+    display: none;
+    justify-content: center;
+
+    img {
+
+        width: 50%;
+        height: 5px;
+    }
+
+}
+
+.container-secao-dois {
+    position: relative;
+    background-image: url(./img/satelite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 520px;
+    display: flex;
+    align-items: flex-start;
+    padding: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.container-secao-dois::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+.secao-dois-conquistas {
+
+    z-index: 2;
+    max-width: 330px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    margin-left: 0px;
+
+
+    h1 {
+        font-size: 28px;
+        font-family: "Exo 2", sans-serif;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 0.7rem;
+    }
+
+}
+
+.titulo-depoimentos {
+
+    h1 {
+
+        font-size: 28px;
+        font-family: "Exo 2", sans-serif;
+    }
+}
+
+.grid {
+    display: grid;
+    gap: 1.2rem;
+    padding: 1.5rem;
+    grid-template-columns: 1fr;
+
+}
+
+.grid-filho {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 1.2rem 1.4rem;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.45;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform .25s ease, box-shadow .25s ease;
+    width: auto;
+}
+
+.grid-filho:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.grid-filho p:last-child {
+    margin-top: 0.7rem;
+    opacity: 0.85;
+    font-style: italic;
+    font-size: 0.9rem;
+}

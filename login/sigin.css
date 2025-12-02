@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IM+Fell+English+SC&family=WDXL+Lubrifont+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IM+Fell+English+SC&family=Raleway:ital,wght@0,100..900;1,100..900&family=WDXL+Lubrifont+TC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3,
+button {
+    font-family: "Exo 2";
+}
+
+p,
+li,
+a,
+label,
+input {
+    font-family: "Raleway";
+    color: white;
+}
+
+.logo-primeira-secao {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    
+}
+
+
+/* FUNDO */
+#imagem-fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 90%;
+    background-image: linear-gradient(to right, rgba(5, 3, 0, 0.689), #0004089c), url("../img/S81-38291~orig.jpg");
+}
+
+/* CARD DE LOGIN/CADASTRO */
+#cadastro {
+    position: relative;
+    width: 380px;
+    padding: 40px;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    height: auto;
+    gap: 20px;
+    z-index: 10;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#cadastro h3 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* INPUTS */
+#cadastro input {
+    width: 270px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 500ms;
+}
+
+#cadastro input::placeholder {
+    color: white;
+}
+
+#cadastro input:focus {
+    outline: none;
+    border-width: 2px;
+    transform: translateY(-5px);
+    box-shadow: 0 0 4px white;
+}
+
+/* ERRO */
+#erro {
+    color: red;
+    margin-top: 3px;
+    display: none;
+}
+
+#conta-criada {
+    color: rgb(8, 222, 8);
+    margin-top: 3px;
+    display: none;
+}
+
+/* BOTÃO CRIAR */
+.btn {
+    background-color: transparent;
+    border: 2px solid white;
+    width: 270px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: white;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background-color: white;
+    color: black;
+}
+
+/* DIV "ou" */
+.linhas {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.linhas p {
+    color: white;
+}
+
+.linhas hr {
+    width: 150px;
+    height: 2px;
+}
+
+/* LOGIN COM OUTRAS CONTAS */
+.opcoes-login ul {
+    list-style: none;
+}
+
+.opcoes-login li {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.opcoes-login li:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.877);
+    transform: scale(1.1);
+}
+
+.opcoes-login i {
+    margin-right: 6px;
+}
+
+.linhas {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    p {
+        color: white;
+        font-family: "Raleway";
+    }
+
+    hr {
+        width: 150px;
+        height: 2px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    #cadastro {
+
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        backdrop-filter: inherit;
+        padding: 0px;
+        min-width: 0px;
+        height: 100dvh;
+    }
+}

@@ -1,0 +1,677 @@
+.primeira-secao {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/inovacao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.40);
+    z-index: 1;
+}
+
+
+.primeira-secao>*:not(.bg-overlay):not(.conteudo-geral-primeira),
+.container-conteudo-foguetes>*:not(.bg-overlay),
+.container-conteudo-satelites>*:not(.bg-overlay),
+.container-geral-quarta-secao>*:not(.bg-overlay),
+.quinta-secao-parcerias>*:not(.bg-overlay),
+.sexta-secao-prototipos>*:not(.bg-overlay) {
+    position: relative;
+    z-index: 2;
+}
+
+.conteudo-geral-primeira {
+    position: relative;
+    z-index: 3;
+}
+
+.container-titulos {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-textos-secao-dois {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.25rem;
+
+
+    h1,
+    h2,
+    h3 {
+
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+        text-shadow: 0 3px 12px rgba(0, 0, 0, 0.8);
+    }
+}
+
+
+
+#Titulo-Explorando {
+    font-size: 3.5rem;
+    margin-bottom: 1.25rem;
+
+    opacity: 0;
+    transform: translateY(150px);
+
+
+    animation: subir-e-aparecer 0.8s forwards ease-out;
+    animation-delay: 0.6s;
+
+}
+
+#Sub-Titulo-AstroLink {
+
+    font-family: "Raleway", sans-serif;
+    font-size: 2.25rem;
+    width: 66rem;
+
+    opacity: 0;
+    transform: translateY(150px);
+
+
+    animation: subir-e-aparecer 0.8s forwards ease-out;
+    animation-delay: 1.2s;
+}
+
+#Sub-Titulo-Abaixo {
+
+    margin-top: 350px;
+    margin-bottom: 40px;
+
+    opacity: 0;
+    transform: translateY(150px);
+
+
+    animation: subir-e-aparecer 0.8s forwards ease-out;
+    animation-delay: 1.6s;
+}
+
+
+
+.container-conteudo-foguetes {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fogueute-inovacao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+
+    h1 {
+
+        font-family: "Exo 2", sans-serif;
+        font-size: 46px;
+        margin-bottom: 4px;
+    }
+
+    h2 {
+
+        font-family: "Exo 2", sans-serif;
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+
+    p {
+
+        font-family: "Raleway", sans-serif;
+        font-size: 24px;
+    }
+}
+
+.textos {
+
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.titulos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+#titulo-conteudo-foguetes {
+
+    width: 660px;
+    text-align: center;
+
+}
+
+#paragrafo-conteudo-foguetes {
+
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px 20px;
+    border-left: 3px solid #ffffff;
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.6;
+    width: 660px;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+#paragrafo-conteudo-foguetes:hover {
+
+
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.container-conteudo-satelites {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/satelite-inovacao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+
+    h1 {
+
+        font-family: "Exo 2", sans-serif;
+        font-size: 46px;
+        margin-bottom: 4px;
+    }
+
+    h2 {
+
+        font-family: "Exo 2", sans-serif;
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+
+    p {
+
+        font-family: "Raleway", sans-serif;
+        font-size: 24px;
+    }
+
+}
+
+.container-geral-quarta-secao {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/foguete-tecnologias.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+
+    h1 {
+
+        font-family: "Exo 2", sans-serif;
+
+    }
+
+    h2 {
+
+        font-family: "Exo 2", sans-serif;
+
+    }
+
+    p {
+
+        font-family: "Raleway", sans-serif;
+
+    }
+}
+
+.titulo-tecnologia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo-tecnologia img {
+    width: 40px;
+}
+
+.titulo-tecnologia h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+
+
+.container-conteudo-tecnologias {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+
+}
+
+
+.container-tecnologias {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 300px;
+    padding-top: 40px;
+
+    h1 {
+
+        font-size: 18px;
+    }
+
+    img {
+
+        width: 40px;
+    }
+
+    p {
+
+        font-size: 10px;
+    }
+}
+
+.container-direita-tecnologias {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container-esquerda-tecnologias {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#paragrafo-conteudo-tecnologias {
+
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px 20px;
+    border-left: 3px solid #ffffff;
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.6;
+    width: 350px;
+    transition: transform .25s ease, box-shadow .25s ease;
+
+}
+
+#paragrafo-conteudo-tecnologias:hover {
+
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.quinta-secao-parcerias {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+    background-image: url(../img/colabs\ 1.png);
+
+
+    h1 {
+
+        font-family: "Exo 2", sans-serif;
+        font-size: 45px;
+
+    }
+
+    h2 {
+
+        font-family: "Exo 2", sans-serif;
+
+    }
+
+    p {
+
+        font-family: "Raleway", sans-serif;
+
+    }
+}
+
+#texto-parcerias {
+
+    background: rgba(255, 255, 255, 0.06);
+    padding: 1.2rem 1.4rem;
+    border-radius: 14px;
+    width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.45;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform .25s ease, box-shadow .25s ease;
+    font-size: 26px;
+
+}
+
+
+.container-geral-secao-parcerias {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.sexta-secao-prototipos {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+    background-image: url(../img/ACD25-0159-017~large\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    h1 {
+
+        font-family: "Exo 2", sans-serif;
+        font-size: 45px;
+
+    }
+
+    h2 {
+
+        font-family: "Exo 2", sans-serif;
+
+    }
+
+    p {
+
+        font-family: "Raleway", sans-serif;
+
+    }
+}
+
+#texto-parcerias:hover {
+
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+#texto-prototipos:hover {
+
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.container-geral-secao-prototipos {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    h1 {
+
+        font-family: "Exo 2", sans-serif;
+        font-size: 45px;
+
+    }
+
+    h2 {
+
+        font-family: "Exo 2", sans-serif;
+
+    }
+
+    p {
+
+        font-family: "Raleway", sans-serif;
+
+    }
+
+}
+
+#texto-prototipos {
+
+    background: rgba(255, 255, 255, 0.06);
+    padding: 1.2rem 1.4rem;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    width: 400px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.45;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform .25s ease, box-shadow .25s ease;
+    font-size: 26px;
+
+}
+
+.logodomundo {
+
+    width: 325px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .primeira-secao {
+
+
+        height: 107vh;
+    }
+
+    .container-textos-secao-dois {
+
+        width: 350px;
+    }
+
+    #Titulo-Explorando {
+
+        font-size: 31px;
+    }
+
+    #Sub-Titulo-AstroLink {
+
+        width: 350px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #Sub-Titulo-Abaixo {
+
+        font-size: 18px;
+        margin-top: 200px;
+    }
+
+    .container-conteudo-foguetes {
+
+        flex-direction: column;
+        gap: 0px;
+        padding-top: 40px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    #titulo-conteudo-foguetes {
+
+        width: 300px;
+        font-size: 28px;
+
+    }
+
+    .titulos {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+
+            width: 250px;
+            font-size: 20px;
+            text-align: center;
+
+        }
+    }
+
+    #paragrafo-conteudo-foguetes {
+
+        width: 230px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .container-conteudo-satelites {
+
+        flex-direction: column-reverse;
+        gap: 0px;
+        padding-top: 40px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .container-conteudo-tecnologias {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 12px;
+
+    }
+
+    .container-tecnologias {
+        flex-direction: column;
+        gap: 0;
+        padding-top: 20px;
+    }
+
+    .container-direita-tecnologias,
+    .container-esquerda-tecnologias {
+        width: 100%;
+        margin-bottom: 40px;
+
+    }
+
+    #paragrafo-conteudo-tecnologias {
+        width: 275px;
+        font-size: 16px;
+    }
+
+    .titulo-tecnologia2 h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .container-geral-quarta-secao {
+
+        height: auto;
+    }
+
+    .container-esquerda-tecnologias {
+
+        display: none;
+    }
+
+    .container-geral-secao-parcerias {
+
+        flex-direction: column;
+    }
+
+    #texto-parcerias {
+
+        width: 300px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .sexta-secao-prototipos,
+    .quinta-secao-parcerias {
+
+        text-align: center;
+    }
+
+    .container-geral-secao-prototipos {
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+
+    }
+
+    #texto-prototipos {
+
+        width: 300px;
+        font-size: 20px;
+        border-left: none;
+
+    }
+
+}
+
+@keyframes subir-e-aparecer-texto {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes subir-e-aparecer {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

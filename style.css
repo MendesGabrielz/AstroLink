@@ -1,0 +1,307 @@
+.container-titulos {
+
+    display: flex;
+    justify-content: center;
+}
+
+.container-textos-secao-dois {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+    text-align: center;
+    gap: 1.25rem;
+
+    h1,
+    h2,
+    h3 {
+
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+    }
+}
+
+
+#Titulo-Explorando {
+
+    width: auto;
+    font-size: 3.5rem;
+    margin-bottom: 1.25rem;
+
+}
+
+#Sub-Titulo-AstroLink {
+
+
+    font-family: "Raleway", sans-serif;
+    font-size: 2.25rem;
+    width: 66rem;
+
+}
+
+
+.container-blocos-secao-um {
+
+    display: flex;
+    justify-content: center;
+
+    h1,
+    h2,
+    h3 {
+
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+    }
+}
+
+.titulos-bloco {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 20rem;
+
+    a {
+
+        color: inherit;
+        text-decoration: none;
+    }
+
+}
+
+.textinhos-bloco {
+
+    border: 1px solid rgba(182, 182, 182, 0.5);
+    background-color: rgba(182, 182, 182, 0.3);
+    border-radius: 20px;
+    padding: 15px;
+    transition: 0.5s ease;
+
+}
+
+.textinhos-bloco:hover {
+
+    background-color: white;
+    color: rgba(0, 0, 0, 0.877);
+    transform: scale(1.08);
+
+}
+
+.container-blocos-secao-dois {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+
+    h1,
+    h2,
+    h3 {
+
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+    }
+
+    p {
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.25rem;
+    }
+}
+
+.titulos-bloco-dois {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 16.2rem;
+
+}
+
+.nossa-visao,
+.nossa-missao {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(182, 182, 182, 0.5);
+    background-color: rgba(182, 182, 182, 0.3);
+    border-radius: 20px;
+    padding: 3rem;
+    width: 400PX;
+    transition: transform 0.25s ease;
+
+}
+
+.nossa-visao:hover {
+
+    transform: translateY(-6px);
+}
+
+.nossa-missao:hover {
+
+    transform: translateY(-6px);
+}
+
+.secao-dois {}
+
+.secao-dois-destaques {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+
+    h1 {
+
+        font-size: 2.5rem;
+        font-family: "Exo 2", sans-serif;
+    }
+}
+
+
+.elementos {
+
+    display: flex;
+    justify-content: center;
+    gap: 11rem;
+    text-align: center;
+    margin-bottom: 6rem;
+
+    p {
+
+        Font-family: "Raleway", sans-serif;
+        font-size: 1.25rem;
+    }
+}
+
+.elementos-filho {
+
+    width: 12rem;
+}
+
+.img-elementos {
+
+    width: 5.625rem;
+}
+
+.container-secao-dois {
+
+    background-image:
+        url(./img/satelite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 44rem;
+}
+
+.secao-dois-conquistas {
+
+    padding-top: 2rem;
+    margin-left: 6rem;
+    width: 66rem;
+    text-align: justify;
+
+
+
+    h1 {
+
+        font-size: 2.5rem;
+        font-family: "Exo 2", sans-serif;
+    }
+
+    p {
+
+        Font-family: "Raleway", sans-serif;
+        font-size: 1.25rem;
+    }
+
+}
+
+.titulo-depoimentos {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+
+    h1 {
+
+        font-size: 2.5rem;
+        font-family: "Exo 2", sans-serif;
+    }
+
+    p {
+
+        Font-family: "Raleway", sans-serif;
+        font-size: 1.25rem;
+    }
+}
+
+.grid-pai {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    gap: 6rem;
+    background: #000;
+    position: relative;
+
+}
+
+.grid-filho {
+
+    display: flex;
+    flex-direction: column;
+
+
+    border: 1px solid black;
+    border-left: 9px solid white;
+    border-radius: 4%;
+
+
+    width: 33rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease,
+        border-left-color .4s ease;
+
+    p {
+
+        font-family: "Raleway", sans-serif;
+    }
+}
+
+.grid-filho:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes subir-e-aparecer-texto {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes subir-e-aparecer {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
