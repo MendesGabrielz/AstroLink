@@ -94,7 +94,7 @@ p {
 }
 
 .descricao {
-    background: rgba(255, 255, 255, 0.1);
+
     padding: 20px;
     margin-top: 15px;
     border-radius: 15px;
@@ -102,6 +102,18 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    border: 1px solid black;
+    border-left: 9px solid white;
+    border-radius: 4%;
+
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    transition: transform .4s ease, box-shadow .4s ease, border-left-color .4s ease;
+}
+
+.descricao:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 
@@ -191,7 +203,6 @@ p {
 .lista-curiosidades li {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 10px;
 }
 
@@ -305,6 +316,11 @@ p {
     .galeria {
 
         padding-right: 0px;
+    }
+
+    .sidebar li {
+
+        width: auto !important;
     }
 
     .galeria-treinamento {

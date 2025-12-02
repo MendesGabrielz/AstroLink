@@ -36,6 +36,13 @@ body {
 #texto-leve {
 
     width: 900px;
+    opacity: 0;
+    transform: translateY(150px);
+
+
+    animation: subir-e-aparecer 0.8s forwards ease-out;
+    animation-delay: 1.2s;
+
 
 }
 
@@ -89,6 +96,13 @@ body {
     border: 1px solid black;
     border-radius: 4%;
     background: rgb(46, 46, 46);
+
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+
+    transform: translateY(-6px);
 }
 
 .produto-img {
@@ -177,6 +191,11 @@ body {
         font-family: "Exo 2", sans-serif;
 
     }
+
+    h1 {
+
+        font-family: "Exo 2", sans-serif;
+    }
 }
 
 #fogueteImagem {
@@ -251,14 +270,14 @@ body {
     }
 
     .botoes {
-        width:300px;
+        width: 300px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
 
-        button{
+        button {
 
             width: 200px;
         }
@@ -269,4 +288,28 @@ body {
         margin-top: 50px;
     }
 
+}
+
+#Loja-especial {
+
+    opacity: 0;
+    transform: translateY(150px);
+
+
+    animation: subir-e-aparecer 0.8s forwards ease-out;
+    animation-delay: 0.6s;
+}
+
+@keyframes subir-e-aparecer-texto {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes subir-e-aparecer {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
