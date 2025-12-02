@@ -218,6 +218,11 @@ nav li:first-child {
     padding-top: 20px;
 }
 
+#Inicio-Sidebar{
+
+    display: none;
+}
+
 
 
 
@@ -470,6 +475,10 @@ nav li:first-child {
         position: relative;
     }
 
+    #Inicio-Sidebar{
+
+    display: block;
+}
 
 
     .secao-tres {
