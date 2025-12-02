@@ -11,6 +11,8 @@ https://www.figma.com/design/DKPfpUvSGowktIE3pAWeO8/Astrolink?node-id=0-1&t=oakd
 
 https://www.figma.com/design/3Zkp3R58aMR3UIQmDm3Dh9/Untitled?node-id=0-1&t=e4gpQ6Q3oZDICdM7-1
 
+---
+
 ##  Documentação dos Arquivos
 
 ### pinegrow.json e pinegrow_*.json
